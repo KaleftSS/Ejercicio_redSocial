@@ -46,3 +46,49 @@ CREATE TABLE comentario_publicacion(
     FOREIGN KEY (id_publicacion) REFERENCES publicacion (id_publicacion) ON DELETE CASCADE,
       FOREIGN KEY (id_comentario) REFERENCES comentario (id_comentario) ON DELETE CASCADE
 );
+
+INSERT INTO usuario (nombre, biografia, genero,  email) VALUES
+('Fen',"Hola","Masculino","fen.example.com"),
+('Hadd',"Como","Masculino","hadd.example.com"),
+('Boli',"Estan?","Femenino","boli.example.com"),
+('Mino',"Todos","Femenino","mino.example.com"),
+('Tebi',"Aqui?","No binario","tebi.example.com");
+
+INSERT INTO amigo (nombre, genero, biografia, email) VALUES
+('kaleft',"Masculino","Hola","kaleft.example.com"),
+('Kingstian',"Masculino","Hola","king.example.com"),
+('Juandi',"Femenino","Hola","juan.example.com"),
+('Nicol',"Femenino","Hola","nicol.example.com"),
+('Esteban',"No binario","hola","esteban.example.com");
+
+INSERT INTO usuario_amigo (id_usuario, id_amigo) VALUES
+(1, 1),
+(2, 2),
+(3, 3),
+(4, 4),
+(5, 5);
+
+INSERT INTO comentario (id_usuario, fecha, texto) VALUES
+(1, "01/01/2001", "Hola"),
+(2, "02/01/2001", "Hola"),
+(3, "03/01/2001", "Hola"),
+(4, "04/01/2001", "Hola"),
+(5, "05/01/2001", "Hola");
+
+INSERT INTO publicacion (id_usuario,formato_imagen,formato_video,numero_reacciones) VALUES
+(1,'jpg','mp4',100),
+(2,'jpg','mp4',234),
+(3,'jpg','mp4',543),
+(4,'jpg','mp4',430),
+(5,'jpg','mp4',95);
+
+INSERT INTO comentario_publicacion (id_publicacion,id_comentario) VALUES
+(1,1),
+(2,1),
+(3,2),
+(4,1),
+(5,1);
+
+
+
+
