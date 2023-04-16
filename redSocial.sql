@@ -89,6 +89,18 @@ INSERT INTO comentario_publicacion (id_publicacion,id_comentario) VALUES
 (4,1),
 (5,1);
 
+UPDATE amigo SET genero = 'Femeninos' WHERE id_amigo = 1;
+UPDATE amigo SET genero = 'Femeninos' WHERE id_amigo = 2;
+UPDATE amigo SET genero = 'Femeninos' WHERE id_amigo = 3;
+UPDATE amigo SET genero = 'Femeninos' WHERE id_amigo = 4;
+UPDATE amigo SET genero = 'Femeninos' WHERE id_amigo = 5;
+
+DELETE FROM comentario WHERE id_comentario = 1;
+DELETE FROM comentario WHERE id_comentario = 2;
+DELETE FROM comentario WHERE id_comentario = 3;
+DELETE FROM comentario WHERE id_comentario = 4;
+DELETE FROM comentario WHERE id_comentario = 5;
+
 
 
 
